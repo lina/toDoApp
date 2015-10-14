@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "quicksand";
+    src: url("../fonts/quicksand/Quicksand-Regular.otf") format("truetype");
+}
+
+html, body {
+  font-family: "quicksand", Verdana, Tahoma;
+}
+
+.todolist_title_wrapper {
+  width:100%;
+  position:fixed;
+  top: 0;
+  font-size: 2em;
+  text-align:center;
+  z-index:1000;
+  background: white;
+}
+
+.todolist_title_wrapper_inner {
+  padding: 0.2em;
+}
+
+.todolist_tasks_wrapper textarea,  .todolist_tasks_wrapper textarea:focus{  
+  display:inline;
+  font-family: "quicksand", Verdana, Tahoma;
+  border: none;
+  outline: none;
+  resize: none;
+  border-bottom: 1px solid #e0e0e0;
+  width:85%;
+}
+
+.todolist_title_wrapper_inner {
+  min-height:100%;
+}
+
+.todolist_items_container {
+  margin-top:3.5em;
+  margin-left:2%;
+}
+
+.todolist_tasks_wrapper{
+  font-size: 1.5em;
+  margin-top:0.2em;
+}
+
+.todolist_tasks_wrapper md-checkbox {
+  display:inline;
+  vertical-align: middle;
+} 
+
+.md-button {
+  position:fixed;
+  font-size: 0.2em;
+  right: 0;
+  top: 0;
+  min-width: 50px;
+  font-family: "quicksand", Verdana, Tahoma;
+  font-weight:bold;
+  margin-right: 5%;
+}

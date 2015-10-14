@@ -1,0 +1,22 @@
+{
+  "name": "toDoApp",
+  "version": "0.1.5",
+  "description": "mobile browser to do app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.1.x"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

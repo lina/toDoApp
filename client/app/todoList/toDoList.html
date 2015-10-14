@@ -1,0 +1,20 @@
+<div ng-controller="toDoListCtrl" ng-app="toDoApp.toDoList">
+  <div class='todo_page_container'>
+    <div class='todolist_title_wrapper'>
+      <div class="todolist_title_wrapper_inner">
+      Notely
+      </div>
+      <md-button class="md-raised todolist_show_tasks_button" ng-click="toggleItemView()">
+        {{toggleItemViewText}}
+      </md-button>
+    </div>
+    <div class="todolist_items_container">
+      <div class='todolist_tasks_wrapper' ng-repeat="todo in toDoTasks track by $index" ng-style="todo.ifShowTask">
+        <md-checkbox class="toolist_checkbox_click" ng-model="todo.ifChecked" aria-label="placeholder" md-no-ink ng-click="completedTask($index)">
+        </md-checkbox> 
+        <textarea rows='1' msd-elastic placeholder='Add your note'class='todolist_textarea_field' ng-model="todo.text" >
+        </textarea>
+      </div>
+    </div>
+  </div>
+</div>
