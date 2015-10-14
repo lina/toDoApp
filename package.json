@@ -4,7 +4,8 @@
   "description": "mobile browser to do app",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "bash ./post_install.sh"
   },
   "dependencies": {
     "express": "4.13.3"
