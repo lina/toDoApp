@@ -8,6 +8,7 @@
     "postinstall": "bash ./post_install.sh"
   },
   "dependencies": {
+    "gzippo": "^0.2.0",
     "bower": "^1.5.3",
     "express": "4.13.3"
   },

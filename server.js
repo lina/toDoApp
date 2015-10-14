@@ -1,6 +1,8 @@
+var gzippo = require('gzippo');
 var express = require('express');
 var app = express();
 
+app.use(gzippo.staticGzip("" + __dirname + "/client"));
 app.use(express.static(__dirname + '/client'));
 
 app.get('/client', function(req, res) {
