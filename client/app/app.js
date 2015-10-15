@@ -12,7 +12,7 @@ angular.module('toDoApp', [
   $stateProvider
     .state('toDoList', {
       url: '/',
-      templateUrl: 'app/toDoList/toDoList.html',
+      templateUrl: 'app/todoList/toDoList.html',
       controller: 'toDoListCtrl'
     });
     $urlRouterProvider.otherwise('/');
